@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ConstraintPriorityDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDZ-CP-upI">
+                                <rect key="frame" x="0.0" y="127" width="375" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKf-Nr-nX8">
+                                        <rect key="frame" x="8" y="0.0" width="30" height="55"/>
+                                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="15"/>
+                                        <state key="normal" title="+86">
+                                            <color key="titleColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sl7-3D-d4f">
+                                        <rect key="frame" x="48" y="0.0" width="319" height="55"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.84705882349999995" green="0.92156862750000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sl7-3D-d4f" secondAttribute="trailing" constant="8" id="07Y-4t-s6T"/>
+                                    <constraint firstItem="lKf-Nr-nX8" firstAttribute="leading" secondItem="EDZ-CP-upI" secondAttribute="leading" constant="8" id="B8R-KK-sIG"/>
+                                    <constraint firstItem="sl7-3D-d4f" firstAttribute="leading" secondItem="lKf-Nr-nX8" secondAttribute="leading" priority="250" id="C7H-Vi-agT"/>
+                                    <constraint firstAttribute="bottom" secondItem="lKf-Nr-nX8" secondAttribute="bottom" id="EUP-Vd-59c"/>
+                                    <constraint firstItem="sl7-3D-d4f" firstAttribute="centerY" secondItem="lKf-Nr-nX8" secondAttribute="centerY" id="ZU4-d6-zim"/>
+                                    <constraint firstItem="sl7-3D-d4f" firstAttribute="top" secondItem="EDZ-CP-upI" secondAttribute="top" id="dZh-Yi-gkn"/>
+                                    <constraint firstItem="lKf-Nr-nX8" firstAttribute="top" secondItem="EDZ-CP-upI" secondAttribute="top" id="eH6-qL-J8D"/>
+                                    <constraint firstItem="lKf-Nr-nX8" firstAttribute="centerY" secondItem="EDZ-CP-upI" secondAttribute="centerY" id="jjJ-hc-c8M"/>
+                                    <constraint firstAttribute="height" constant="55" id="nNb-pG-xTS"/>
+                                    <constraint firstItem="sl7-3D-d4f" firstAttribute="leading" secondItem="lKf-Nr-nX8" secondAttribute="trailing" priority="750" constant="10" id="s9z-7j-6J9"/>
+                                    <constraint firstAttribute="bottom" secondItem="sl7-3D-d4f" secondAttribute="bottom" id="vEf-8b-NfP"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Wk-u9-xMS">
+                                <rect key="frame" x="134.5" y="318.5" width="106" height="30"/>
+                                <state key="normal" title="Change Priority"/>
+                                <connections>
+                                    <action selector="changePriorityButtonDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uF9-Cq-E1v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahF-OY-bqF">
+                                <rect key="frame" x="111" y="356" width="153" height="30"/>
+                                <state key="normal" title="Change Country Code"/>
+                                <connections>
+                                    <action selector="changeCountryCodeButtonDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9r4-6K-oSh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EDZ-CP-upI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="26L-UO-Iii"/>
+                            <constraint firstItem="ahF-OY-bqF" firstAttribute="centerX" secondItem="5Wk-u9-xMS" secondAttribute="centerX" id="Hfr-eF-xKn"/>
+                            <constraint firstItem="5Wk-u9-xMS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xrz-6y-2Zg"/>
+                            <constraint firstItem="EDZ-CP-upI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Y2f-aR-wDw"/>
+                            <constraint firstItem="ahF-OY-bqF" firstAttribute="top" secondItem="5Wk-u9-xMS" secondAttribute="bottom" constant="7.5" id="bZV-Fo-Pyc"/>
+                            <constraint firstItem="EDZ-CP-upI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="107" id="hIC-Hh-vER"/>
+                            <constraint firstItem="5Wk-u9-xMS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yvm-Nv-oeV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="countryCodeButton" destination="lKf-Nr-nX8" id="7On-6H-4Z7"/>
+                        <outlet property="userNameAlignConstraint" destination="C7H-Vi-agT" id="rvz-Ya-Zl4"/>
+                        <outlet property="userNameLeadingConstraint" destination="s9z-7j-6J9" id="Hkf-7a-6Y6"/>
+                        <outlet property="userNameTextField" destination="sl7-3D-d4f" id="Gz3-pT-C4R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

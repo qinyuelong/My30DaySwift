@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B04800621BE12CB0013FBB1 /* FirstWhereFunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B04800521BE12CB0013FBB1 /* FirstWhereFunctionViewController.swift */; };
+		7B04800921BE2FBE0013FBB1 /* AllSatisfyFunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B04800821BE2FBE0013FBB1 /* AllSatisfyFunctionViewController.swift */; };
+		7B04800C21BE34C00013FBB1 /* SimpleDeferFunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B04800B21BE34C00013FBB1 /* SimpleDeferFunctionViewController.swift */; };
 		7B37D25821B7639C00B3AF74 /* DismissKeyboardInteractivivelyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B37D25721B7639C00B3AF74 /* DismissKeyboardInteractivivelyViewController.swift */; };
 		7B37D25B21B7640100B3AF74 /* OneTimeCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B37D25A21B7640100B3AF74 /* OneTimeCodeViewController.swift */; };
 		7B37D26021B76D6B00B3AF74 /* FilterFunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B37D25F21B76D6B00B3AF74 /* FilterFunctionViewController.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B04800521BE12CB0013FBB1 /* FirstWhereFunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstWhereFunctionViewController.swift; sourceTree = "<group>"; };
+		7B04800821BE2FBE0013FBB1 /* AllSatisfyFunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSatisfyFunctionViewController.swift; sourceTree = "<group>"; };
+		7B04800B21BE34C00013FBB1 /* SimpleDeferFunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDeferFunctionViewController.swift; sourceTree = "<group>"; };
 		7B37D25721B7639C00B3AF74 /* DismissKeyboardInteractivivelyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissKeyboardInteractivivelyViewController.swift; sourceTree = "<group>"; };
 		7B37D25A21B7640100B3AF74 /* OneTimeCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTimeCodeViewController.swift; sourceTree = "<group>"; };
 		7B37D25F21B76D6B00B3AF74 /* FilterFunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterFunctionViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +57,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B04800421BE12B10013FBB1 /* 9 FirstWhereFunction */ = {
+			isa = PBXGroup;
+			children = (
+				7B04800521BE12CB0013FBB1 /* FirstWhereFunctionViewController.swift */,
+			);
+			path = "9 FirstWhereFunction";
+			sourceTree = "<group>";
+		};
+		7B04800721BE2FAB0013FBB1 /* 10 AllSatisfyFunction */ = {
+			isa = PBXGroup;
+			children = (
+				7B04800821BE2FBE0013FBB1 /* AllSatisfyFunctionViewController.swift */,
+			);
+			path = "10 AllSatisfyFunction";
+			sourceTree = "<group>";
+		};
+		7B04800A21BE34AD0013FBB1 /* 11 SimpleDeferFunction */ = {
+			isa = PBXGroup;
+			children = (
+				7B04800B21BE34C00013FBB1 /* SimpleDeferFunctionViewController.swift */,
+			);
+			path = "11 SimpleDeferFunction";
+			sourceTree = "<group>";
+		};
 		7B37D25621B7636E00B3AF74 /* 5 DismissKeyboardInteractivively */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +148,9 @@
 		7BA5D12221B4CB0A0017FB3A /* Swift-Deily-Tips */ = {
 			isa = PBXGroup;
 			children = (
+				7B04800A21BE34AD0013FBB1 /* 11 SimpleDeferFunction */,
+				7B04800721BE2FAB0013FBB1 /* 10 AllSatisfyFunction */,
+				7B04800421BE12B10013FBB1 /* 9 FirstWhereFunction */,
 				7B37D26121B76EB500B3AF74 /* 8 GuardOptionalBinding */,
 				7B37D25C21B76A6700B3AF74 /* 7 FilterFunction */,
 				7B37D25921B763F200B3AF74 /* 6 OneTimeCode */,
@@ -227,7 +260,10 @@
 				7BA5D12621B4CB0A0017FB3A /* ViewController.swift in Sources */,
 				7B37D26321B76ECF00B3AF74 /* GuardOptionalBindingViewController.swift in Sources */,
 				7BA5D12421B4CB0A0017FB3A /* AppDelegate.swift in Sources */,
+				7B04800C21BE34C00013FBB1 /* SimpleDeferFunctionViewController.swift in Sources */,
 				7B4C5D4C21B61B2B00460D9E /* MemberShortHand.swift in Sources */,
+				7B04800621BE12CB0013FBB1 /* FirstWhereFunctionViewController.swift in Sources */,
+				7B04800921BE2FBE0013FBB1 /* AllSatisfyFunctionViewController.swift in Sources */,
 				7B4C5D4921B619AD00460D9E /* UIColorConvenienceInit.swift in Sources */,
 				7B37D25B21B7640100B3AF74 /* OneTimeCodeViewController.swift in Sources */,
 				7B37D25821B7639C00B3AF74 /* DismissKeyboardInteractivivelyViewController.swift in Sources */,
